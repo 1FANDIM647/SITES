@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>
+Clock in Java Script
+</title>
+<META name="keywords" content="Clock, Java Clock, JavaScript Clock, Free, World, Time, Date">
+<META name="description" content="Here you can find an easy to install Clock written in Javascript to put into your page.">
+<script language="javascript">
+<!-- Clock in Java Script .. Cameron Gregory  http://www.bloke.com/
+// http://www.bloke.com/javascript/Clock/
+var dateform
+speed=1000
+len=28
+tid = 0;
+
+function dodate()
+{
+  f.date.value=new Date();
+  tid=window.setTimeout("dodate()",speed);
+}
+ 
+function start(x) {
+  f=x
+  tid=window.setTimeout("dodate()",speed);
+}
+ 
+function cleartid() {
+  window.clearTimeout(tid);
+}
+ 
+// for some reason on some pages this crashes netscape
+function Clock()
+{
+document.write('<FORM name=dateform><input name=date size=')
+document.write(len)
+document.write(' value="Clock: Requires Javascript"></FORM>')
+start(document.dateform);
+}
+// end-->
+</script>
+
+
+
+</head>
+<body>
+
+<body bgcolor="#000000" text="#38CC70" link="#F3C961" vlink="F3C961" alink="#F3C961">
+<table width=100% cellspacing=0 cellpadding=0>
+<tr><td width=1000 valign=top>
+<b>[
+   <a href=http://www.bloke.com/>Bloke.com</a>
+|| <a href=http://www.bloke.com/linux/>Linux</a>
+|| <a href=http://www.bloke.com/javascript/>JavaScript</a>
+|| <a href=http://java.bloke.com/>Java</a>
+<!--
+|| <a href=http://gday.bloke.com:81/>Channels</a>
+-->
+|| <a href=http://www.njvb.com/>Volleyball</a>
+]</b>
+<br>
+Free: [ <a href=http://www.guestbot.com/>Guestbook</a> || 
+<a href=http://MessageBot.com/>MessageBot</a> ||
+<a href=http://www.plugins.com/>Plugins</a> ||
+<a href=http://counter.bloke.com/>Counter</a> ||
+|| <a href=http://www.bloke.com/linkme/>Link Me</a>
+|| <a href=http://counter.bloke.com/advertise.html/>Advertise</a>
+<table cellpadding=0 cellspacing=0>
+<FORM ACTION="http://www.findbot.com/search.cgi"> 
+<tr><td>
+<SELECT NAME=e>
+<OPTION VALUE="hb">HotBot
+<OPTION VALUE="av">AltaVista
+<OPTION VALUE="ls">LookSmart
+<OPTION VALUE="ex">Excite
+<OPTION VALUE="is">Infoseek
+<OPTION VALUE="lc">Lycos
+<OPTION VALUE="dn">DejaNews
+</SELECT></td><td><INPUT SIZE=30 NAME=s></td><td><INPUT TYPE=submit VALUE=Search></td></tr>
+</FORM>   
+</table>
+</td>
+<td valign=top width=140><a href=http://www.bloke.com/><img src=http://www.bloke.com/images/Bloke_com_140x70.gif width=140 height=70 border=0 alt="www.bloke.com"></a></td>
+<td width=1></td></tr></table>
+
+
+<CENTER>
+
+<table bgcolor=#999999 cellpadding=10>
+<tr><th><font color=#000000><h2><a href=/cgi-bin/click.cgi?http://www.flowerbot.com/>FlowerBot</a></h2></font></th>
+<th><h3><font color=#000000>Send your Mum some Flowers!</font></h3></th></tr></table>
+
+</CENTER>
+<h2><a href=/>Bloke</a> &gt; <a href=/javascript/>JavaScript</a> &gt; Clock</h2>
+This page written with Java Script implements a Clock.
+The interface is a single function that takes no arguments:
+<p>
+<b>Clock()</b>
+<!--
+<ul>
+<li> <b>mesg</b> The message!
+<li> <b>len</b> The size of the form to create the ticker tape (<i>size=</i> in a FORM input field), and
+<li> <b>speed</b> how fast (in millli seconds?) to scroll.
+</ul>
+-->
+
+<script language="javascript">
+
+// You need a javascript compatible browser to view the following <br>
+Clock();
+// end javascipt section <br>
+
+</script>
+</center>
+Also available is the <i>Server Clock</i>.  Where you can set the
+time to whatever area that you like. (eg paris and new york)
+See my example page of <a href=server.html><b>Times Around the World</b></a>.
+<p>
+Also available is the <a href=statusclock.html><b>Status Clock</b></a>
+which puts the time in the menu bar.
+
+<h3>Warning</h3>
+I have found Java Script to be quite unstable, when playing with it, Netscape
+2.0 crashed <i>many</i> times.  And consitently too..
+<p>
+<h3>How To</h3>
+<ul>
+<li> Include <a href=clock.txt><b>clock.txt</b></a> in the <b>HEAD</b> section of your document.
+<li> Add the following inside your document:
+<pre>
+&lt;script language="javascript"&gt;
+Clock();
+&lt;/script&gt;
+</pre>
+<li> View the source of this document for an example.
+</ul>
+Of course you really should comment out the java script to other browsers.
+
+<h3>See Also</h3>
+<ul>
+<li> <a href=server.html>Times around the World</a>
+<li> <a href=statusclock.html>Clock in the StatusBar</a>
+<li> <a href=http://www.clockbot.com/>ClockBot.com</a>
+<li> <a href=../Date/>Date</a> - display the date/time as plain text.
+<li> <a href=../Countdown/>Countdown</a>
+<li> <a href=../Countup/>Countup</a>
+<li> <a href=/javascript/>My JavaScript Page</a>
+</ul>
+
+
+<p><b>Got JavaScript questions?</b>
+Maybe my <a href=http://www.boardbot.com/boardbot/javascript/>JavaScript Board</a> has the answers?
+<!-- Start http://messagebot.com -->
+<FORM ACTION="http://messagebot.com/cgi-bin/list/add.cgi">
+<table border=2><tr><td>
+Enter your Email to join my JavaScript List:
+<br>
+(highly recommended if you use these scripts!)
+<br>
+<input name="email">
+<input type="hidden" name="list" value="javascript">
+<input type="submit" value="Join">
+<br>
+<font size="-1">Powered by: <a TARGET="_top" href="http://messagebot.com/">MessageBot.com</a></font>
+</td></tr></table>
+</FORM>
+<!-- End http://MessgheBot.com -->
+
+
+
+<li> Java is a registered trademark of Sun Microsystems, Inc.
+
+
+<p>
+<hr size=4>
+<b><a href=/cgi-bin/click.cgi?http://www.bloke.com/>Cameron Gregory</a> - <a href=mailto:cameron@bloke.com>cameron@bloke.com</a></b>
+<table border=4><tr>
+<td><applet ARCHIVE=http://counter.bloke.com/Counter.zip codebase=http://counter.bloke.com/ code=Counter width=90 height=20>
+<param name=img value=default-black-green2.gif>
+</applet></td></tr></table>
+</BODY>
+</HTML>
+
+
+
