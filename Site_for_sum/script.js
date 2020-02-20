@@ -1,4 +1,18 @@
 
+// object for  calculator  
+const DATA = {
+    whichSite: ['landing','multiPage', 'onlineStore'],
+    price: [4000,8000,26000],
+    desktopTemplates: [50 , 40 , 30],
+    adapt: 20,
+    mobileTemplates:15,
+    editable: 10,
+    metrikaYandex: [500,1000,2000],
+    analyticsGoogle: [850,1350,3000],
+    sendOrder: 500,
+    deadlineDay: [ [2,7] , [3,10], [7,14]],
+    deadlinePercent: [20 ,17,15]
+};
 
 // how  to talk   with elements of html code 
 
@@ -9,7 +23,8 @@ mainForm = document.querySelector('.main-form'),
 formCalculate = document.querySelector('.form-calculate'),
 endButton =document.querySelector('.end-button'),
 total =document.querySelector('.total'),
-fastRange = document.querySelector('.fast-range');
+fastRange = document.querySelector('.fast-range'),
+totalPriceSum = document.querySelector('.total_price_sum');
 
 
 
@@ -23,7 +38,23 @@ function hideElem(elem) {
     elem.style.display = 'none';  
 }
 
-function hnandlerCallBackForm(){
+function priceCalculation(elem){
+ let result = 0;
+
+
+    if (elem.name === 'whichSite'){
+        for(const item of formCalculate.elements){
+             if(item.type === 'checkbox'){
+                 item.checked = false;
+             }
+        }
+        hideElem(fastRange);
+    }
+    // in begin  result will be 0 
+    totalPriceSum.textContent = result;
+}
+
+function hnandlerCallBackForm(event){
     const target = event.target;
     
     // if element contains 
@@ -37,7 +68,9 @@ function hnandlerCallBackForm(){
         
        
     } 
-
+    if (target.classList.contains('calc-handler')){
+        priceCalculation(target);
+    }
 };
 
 startButton.addEventListener('click', function() {
