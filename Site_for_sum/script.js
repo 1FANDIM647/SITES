@@ -24,8 +24,18 @@ formCalculate = document.querySelector('.form-calculate'),
 endButton =document.querySelector('.end-button'),
 total =document.querySelector('.total'),
 fastRange = document.querySelector('.fast-range'),
-totalPriceSum = document.querySelector('.total_price_sum');
-
+totalPriceSum = document.querySelector('.total_price__sum'),
+adapt_phone=document.querySelector(".checkbox-label adapt_value"),
+mobile_desighn = document.querySelector(".checkbox-label mobileTemplates_value");
+// if  we do not need adaptation for cell phones ,  than  we do not need desigh(HOMEWORK2)
+function Blockadapt(adapt_phone){
+     
+   if(adapt_phone === true) {
+    mobile_desighn.style.display = 'none'; 
+   } 
+  
+}
+ 
 
 
 function showElem(elem) {
@@ -39,8 +49,9 @@ function hideElem(elem) {
 }
 
 function priceCalculation(elem){
- let result = 0;
-
+ let result = 0,
+     index=0; 
+     options = [];
 
     if (elem.name === 'whichSite'){
         for(const item of formCalculate.elements){
@@ -50,11 +61,43 @@ function priceCalculation(elem){
         }
         hideElem(fastRange);
     }
+     
+    for (const item of formCalculate.elements){
+          if (item.name === 'whichSite' && item.checked){
+              // get index each element
+              index = (DATA.whichSite.indexOf(item.value));
+          } else if (item.classList.contains('calc-handler') && item.checked ){
+              options.push(item.value)
+          }      
+    }
+    options.forEach(function(key){
+       if (typeof(DATA[key])=== 'number'){
+           if(key === 'sendOrder'){
+               result+= data[key]
+           }
+           else {
+               result += DATA.price[index] * DATA[key]/100
+           }
+       }
+       else {
+            if (key === 'desktopTemplates'){
+                 result += DATA.price[index] * DATA[key][index] / 100
+
+            }else{
+                result += DATA[key][index];
+            }
+       }
+       
+    })
+
+    result += DATA.price[index];
     // in begin  result will be 0 
     totalPriceSum.textContent = result;
 }
 
-function hnandlerCallBackForm(event){
+
+
+function handlerCallBackForm(event){
     const target = event.target;
     
     // if element contains 
@@ -88,4 +131,4 @@ endButton.addEventListener('click', function() {
 
 });
 
-formCalculate.addEventListener('change', hnandlerCallBackForm); 
+formCalculate.addEventListener('change', handlerCallBackForm); 
