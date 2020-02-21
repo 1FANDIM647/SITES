@@ -31,7 +31,7 @@ mobile_desighn = document.querySelector(".checkbox-label mobileTemplates_value")
 function Blockadapt(adapt_phone){
      
    if(adapt_phone === true) {
-    mobile_desighn.style.display = 'none'; 
+      hideElem(mobile_desighn);
    } 
   
 }
