@@ -1,0 +1,305 @@
+<html>
+<head>
+    <title>SportKot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class= "headers">
+<header>
+
+<img src ="wellness.png">
+
+ </header>
+</div>
+
+<h1>Лучшие товары от wellness </h1>
+
+
+
+<h3>
+Интересные и удивительные эксперименты, основанные на древних забытых знаниях и передовых малоизвестных технологиях. Мир бесконечно интересен. Ваш интерес к темам затрагиваемым на канале,
+
+Мы предоставляем 20% скидку на  все  товары 
+
+ </h3>
+
+
+<div class="sim-slider">
+  <ul class="sim-slider-list">
+    <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+    <li class="sim-slider-element"><img src="  https://avatars.mds.yandex.net/get-pdb/1701500/181633c4-4e6c-4725-a759-815f4c459705/s1200?webp=false " alt="0"></li>
+    <li class="sim-slider-element"><img src=" http://orievskosmetix.ulcraft.com/uploads/s/x/f/f/xfflucjnbm9f/img/full_M2Tp0nug.jpg" alt="1"></li>
+    <li class="sim-slider-element"><img src="http://orievskosmetix.ulcraft.com/uploads/s/x/f/f/xfflucjnbm9f/img/full_M2Tp0nug.jpg  " alt="2"></li>
+    <li class="sim-slider-element"><img src="https://cache3.youla.io/files/images/orig/5d/0a/5d0a948db5fc2d5074327e92.jpg" alt="3"></li>
+    <li class="sim-slider-element"><img src=" https://i.pinimg.com/originals/c7/40/a9/c740a9704403d87c52f491383e806b22.jpg" alt="4"></li>
+    <li class="sim-slider-element"><img src="https://pruffmelab-a.akamaihd.net/user/fa8ff199b5c9dbc96a7eda40a88b6f85/photos/752432c1839cf83c57216bba6991b866.jpg" alt="5"></li>
+  </ul>
+  <div class="sim-slider-arrow-left"></div>
+  <div class="sim-slider-arrow-right"></div>
+  <div class="sim-slider-dots"></div>
+</div>
+
+
+
+
+
+
+<a class="buttons" href='#' >Купить по скидке</a>
+
+
+
+
+
+
+
+
+
+<h3> Научная коллегия Орифлэйм - это всемирно признанные специалисты, каждый из которых является непревзойденным авторитетом в своей области исследований. Все эксперты разделяют ценности Орифлэм, сочетая использование природных ингредиентов и последних научных достижений с принципами ответственного производства и заботой об окружающей среде.</h3>
+
+
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/"></a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/"></a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/"></a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/"></a></li>
+              <li><a href="http://scanfcode.com/category/android/"></a></li>
+              <li><a href="http://scanfcode.com/category/templates/"></a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/"></a></li>
+              <li><a href="http://scanfcode.com/contact/"></a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/"></a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/"></a></li>
+              <li><a href="http://scanfcode.com/sitemap/"></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+
+
+
+ 
+</body>    
+
+<script>
+
+function Sim(sldrId) {
+
+	let id = document.getElementById(sldrId);
+	if(id) {
+		this.sldrRoot = id
+	}
+	else {
+		this.sldrRoot = document.querySelector('.sim-slider')
+	};
+
+	// Carousel objects
+	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
+	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
+	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
+	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
+	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
+	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+
+	// Initialization
+	this.options = Sim.defaults;
+	Sim.initialize(this)
+};
+
+Sim.defaults = {
+
+	// Default options for the carousel
+	loop: true,     // Бесконечное зацикливание слайдера
+	auto: true,     // Автоматическое пролистывание
+	interval: 5000, // Интервал между пролистыванием элементов (мс)
+	arrows: true,   // Пролистывание стрелками
+	dots: true      // Индикаторные точки
+};
+
+Sim.prototype.elemPrev = function(num) {
+	num = num || 1;
+
+	let prevElement = this.currentElement;
+	this.currentElement -= num;
+	if(this.currentElement < 0) this.currentElement = this.elemCount-1;
+
+	if(!this.options.loop) {
+		if(this.currentElement == 0) {
+			this.leftArrow.style.display = 'none'
+		};
+		this.rightArrow.style.display = 'block'
+	};
+	
+	this.sldrElements[this.currentElement].style.opacity = '1';
+	this.sldrElements[prevElement].style.opacity = '0';
+
+	if(this.options.dots) {
+		this.dotOn(prevElement); this.dotOff(this.currentElement)
+	}
+};
+
+Sim.prototype.elemNext = function(num) {
+	num = num || 1;
+	
+	let prevElement = this.currentElement;
+	this.currentElement += num;
+	if(this.currentElement >= this.elemCount) this.currentElement = 0;
+
+	if(!this.options.loop) {
+		if(this.currentElement == this.elemCount-1) {
+			this.rightArrow.style.display = 'none'
+		};
+		this.leftArrow.style.display = 'block'
+	};
+
+	this.sldrElements[this.currentElement].style.opacity = '1';
+	this.sldrElements[prevElement].style.opacity = '0';
+
+	if(this.options.dots) {
+		this.dotOn(prevElement); this.dotOff(this.currentElement)
+	}
+};
+
+Sim.prototype.dotOn = function(num) {
+	this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
+};
+
+Sim.prototype.dotOff = function(num) {
+	this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
+};
+
+Sim.initialize = function(that) {
+
+	// Constants
+	that.elemCount = that.sldrElements.length; // Количество элементов
+
+	// Variables
+	that.currentElement = 0;
+	let bgTime = getTime();
+
+	// Functions
+	function getTime() {
+		return new Date().getTime();
+	};
+	function setAutoScroll() {
+		that.autoScroll = setInterval(function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime + 10 > that.options.interval) {
+				bgTime = fnTime; that.elemNext()
+			}
+		}, that.options.interval)
+	};
+
+	// Start initialization
+	if(that.elemCount <= 1) {   // Отключить навигацию
+		that.options.auto = false; that.options.arrows = false; that.options.dots = false;
+		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+	};
+	if(that.elemCount >= 1) {   // показать первый элемент
+		that.sldrElemFirst.style.opacity = '1';
+	};
+
+	if(!that.options.loop) {
+		that.leftArrow.style.display = 'none';  // отключить левую стрелку
+		that.options.auto = false; // отключить автопркрутку
+	}
+	else if(that.options.auto) {   // инициализация автопрокруки
+		setAutoScroll();
+		// Остановка прокрутки при наведении мыши на элемент
+		that.sldrList.addEventListener('mouseenter', function() {clearInterval(that.autoScroll)}, false);
+		that.sldrList.addEventListener('mouseleave', setAutoScroll, false)
+	};
+
+	if(that.options.arrows) {  // инициализация стрелок
+		that.leftArrow.addEventListener('click', function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime > 1000) {
+				bgTime = fnTime; that.elemPrev()
+			}
+		}, false);
+		that.rightArrow.addEventListener('click', function() {
+			let fnTime = getTime();
+			if(fnTime - bgTime > 1000) {
+				bgTime = fnTime; that.elemNext()
+			}
+		}, false)
+	}
+	else {
+		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+	};
+
+	if(that.options.dots) {  // инициализация индикаторных точек
+		let sum = '', diffNum;
+		for(let i=0; i<that.elemCount; i++) {
+			sum += '<span class="sim-dot"></span>'
+		};
+		that.indicatorDots.innerHTML = sum;
+		that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sim-dot');
+		// Назначаем точкам обработчик события 'click'
+		for(let n=0; n<that.elemCount; n++) {
+			that.indicatorDotsAll[n].addEventListener('click', function() {
+				diffNum = Math.abs(n - that.currentElement);
+				if(n < that.currentElement) {
+					bgTime = getTime(); that.elemPrev(diffNum)
+				}
+				else if(n > that.currentElement) {
+					bgTime = getTime(); that.elemNext(diffNum)
+				}
+				// Если n == that.currentElement ничего не делаем
+			}, false)
+		};
+		that.dotOff(0);  // точка[0] выключена, остальные включены
+		for(let i=1; i<that.elemCount; i++) {
+			that.dotOn(i)
+		}
+	}
+};
+
+new Sim();
+
+
+
+</script>
+
+
+</html>   
